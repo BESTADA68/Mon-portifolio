@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio | Développeur Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Portfo<span>lio</span></a>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#hero" class="active">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Indicateur de défilement -->
+    <div class="scroll-indicator" id="scrollIndicator">
+        <div class="scroll-dot active" data-label="Accueil" onclick="scrollToSection('hero')"></div>
+        <div class="scroll-dot" data-label="À propos" onclick="scrollToSection('about')"></div>
+        <div class="scroll-dot" data-label="Compétences" onclick="scrollToSection('skills')"></div>
+        <div class="scroll-dot" data-label="Projets" onclick="scrollToSection('projects')"></div>
+        <div class="scroll-dot" data-label="Contact" onclick="scrollToSection('contact')"></div>
+        <div class="scroll-dot" data-label="Footer" onclick="scrollToSection('footer')"></div>
+    </div>
+
+    <!-- Container principal avec toutes les sections -->
+    <div class="main-container" id="mainContainer">
+        <!-- Section Hero -->
+        <section id="hero" class="section hero">
+            <div class="container section-content">
+                <div class="hero-content">
+                    <h1>KEITA ADAMA</h1>
+                    <p>Développeur Web passionné par la création d'expériences numériques innovantes et performantes.</p>
+                    <a href="#about" class="btn">Découvrir mon profil</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="about" class="section about">
+            <div class="container section-content">
+                <h2>À propos</h2>
+                <div class="about-content">
+                    <div class="profile-img">
+                        <img src="images/IMG 1.jpg" alt="KEITA ADAMA">
+                    </div>
+                    <div class="bio">
+                        <h3>Développeur Web Créatif</h3>
+                        <p>Passionné par le développement web depuis une année, je mets mes compétences au service de projets innovants et impactants. Mon objectif est de créer des expériences numériques qui allient esthétique, performance et accessibilité.</p>
+                        <p>Accuellement en DUT en Informatique de gestion l'INTEC SUP, j'ai travaillé sur divers projets allant de sites vitrines . Je suis constamment à la recherche de nouvelles technologies et méthodologies pour améliorer mes compétences.</p>
+                        <p>En parallèle je suis juriste de formation avec une licence en droit privé à la Faculté de Droit Privé (FDPRI).</p>
+                        <p>En dehors du code, je suis passionné par le design UX/UI, la photographie, le droit et les voyages, qui sont pour moi une source d'inspiration constante.</p>
+                        <p>Fondateur de ROYAL TECHNOLOGIE, l'entreprise spécialisé en NOUVELLES TECHNOLOGIES </p>
+                        <a href="#contact" class="btn">Me contacter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills" class="section skills">
+            <div class="container section-content">
+                <h2>Mes Compétences</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>Site Web</h3>
+                        <p>HTML5, CSS3, JavaScript, </p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Design Graphic</h3>
+                        <p>Canva, PhotoShop</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Technique de recherche d'emploi</h3>
+                        <p>La rédaction des CV et Lettre de motivation (LM)</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Réseau Digital</h3>
+                        <p>E-Commerce (Vente en ligne), Compagne publicitaire Facebook</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projects" class="section projects">
+            <div class="container section-content">
+                <h2>Mes Projets</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-img">
+                            <img src="images/IMG e-commerce.jpg" alt="Plateforme E-commerce">
+                        </div>
+                        <div class="project-info">
+                            <h3>Plateforme E-commerce</h3>
+                            <p>Développement d'une plateforme e-commerce complète . Intégration de paiement sécurisé, gestion de panier et système de recommandations.</p>
+                            <a href="#" class="btn">Voir le projet</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-img">
+                            <img src="images/IMG site école.jpg" alt="site vitrine">
+                        </div>
+                        <div class="project-info">
+                            <h3>Site web vitrine</h3>
+                            <p>Création des sites web moderne et attactifs pour des écoles pouvant faire leurs presentations le mieux possible. Avec HTML et CSS pour donner plus de valeurs aux entreprises</p>
+                            <a href="#" class="btn">Voir le projet</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-img">
+                            <img src="images/IMG formation.jpg" alt="formation">
+                        </div>
+                        <div class="project-info">
+                            <h3>Projet de création d'un site de Formation</h3>
+                            <p>La création d'un site de formation est un projet nouri de la confiance pour offrir à nos frères et soeurs de l'accès aux formations sans pourtant faire de deplacement.</p>
+                            <a href="#" class="btn">Voir le projet</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section contact">
+            <div class="container section-content">
+                <h2>Contactez-moi</h2>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Objet</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn submit-btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3>Portfolio</h3>
+                        <p>Site web personnel présentant mes compétences, projets et expériences en développement web.</p>
+                    </div>
+                    <div class="footer-info">
+                        <h3>Liens rapides</h3>
+                        <ul>
+                            <li><a href="#hero">Accueil</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#skills">Compétences</a></li>
+                            <li><a href="#projects">Projets</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-info">
+                        <h3>Contact</h3>
+                        <p>Email: techroyal422@gmail.com</p>
+                        <p>Téléphone: +223 68 40 50 61</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-codepen"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2026 Keita Adama. Tous droits réservés.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+</html>
